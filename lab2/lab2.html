@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 2 - TBD</title>
+    <title>Lab 2 - lista i podpowiedzi</title>
 </head>
 <body>
-    A Placeholder, please come back later.
+    <form action="">
+        <label for="postep"> Twój postęp w wypełnianiu tego wieloetapowego formularza:</label>
+        <progress id="postep" max="100" value="33"></progress>
+        <br>
+        <label for="fruit">Twój ulubiony owoc to:</label>
+        <datalist id="fruit">
+            <option value="apple">Jabłko</option>
+            <option value="pear">Gruszka</option>
+            <option value="plum">Śliwka</option>
+            <option value="watermelon">Arbuz</option>
+        </datalist>
+        <br>
+        <input type="submit" value="Wyślij"><br>
+        <br>
+        <label for="results">Sporo osób ju wypełniło ankietę. Dołącz do nich! Nasz cel to uzyskanie 500 odpowiedzi.</label>
+        <meter id="results" min="0" max="500" low="450" value="14"></meter>
+    </form>
 </body>
 </html>
