@@ -8,7 +8,7 @@
     <title>WSB - Formularz</title>
 </head>
 <body>
-    <form action="skrypt.php" method="post" enctype="multipart/form-data" autocomplete="on">
+    <form action="/skrypt.php" method="post" enctype="multipart/form-data" autocomplete="on">
         <fieldset>
             <legend>Twoje dane:</legend>
             <label for="name">Imię lub nick&nbsp;</label>
@@ -26,20 +26,20 @@
             <label for="birthdate">Data Urodzenia&nbsp;</label>
             <input type="date" name="birthdate" id="birthdate" min="1918-11-11"><br>
 
-            <label for="sex">Płeć&nbsp;</label>
-            <input type="radio" name="sex" id="sex" value="male">mężczyzna
-            <input type="radio" name="sex" id="sex" value="female" checked="checked">kobieta
-            <input type="radio" name="sex" id="sex" value="non-binary">niebinarna<br>
+            Płeć&nbsp;
+            <input type="radio" name="male" id="male" value="male">mężczyzna
+            <input type="radio" name="female" id="female" value="female" checked="checked">kobieta
+            <input type="radio" name="non-binary" id="non-binary" value="non-binary">niebinarna<br>
 
             <label for="avatar">Twój awatar</label>
             <input type="file" name="avatar" id="avatar" accept="image/*">
         </fieldset>
         <fieldset>
             <legend>Zainteresowania i umiejętności:</legend>
-            <label for="sport">Sport</label>
-            <input type="checkbox" name="sport" id="sport" value="football">piłka nożna
-            <input type="checkbox" name="sport" id="sport" value="handball">szczypiorniak
-            <input type="checkbox" name="sport" id="sport" value="speedway">żużel<br>
+            Sport&nbsp;
+                <input type="checkbox" name="football" id="football" value="football">piłka nożna
+                <input type="checkbox" name="sport" id="handball" value="handball">szczypiorniak
+                <input type="checkbox" name="sport" id="speedway" value="speedway">żużel<br>
 
             <label for="itskills">Umiejętności IT</label><br>
             <select name="itskills" id="itskills" size="5" multiple="multiple">
