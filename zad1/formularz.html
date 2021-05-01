@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Kacper Szczepanek">
+    <title>WSB - Formularz</title>
+</head>
+<body>
+    <form action="skrypt.php" method="post" enctype="multipart/form-data" autocomplete="on">
+        <fieldset>
+            <legend>Twoje dane:</legend>
+            <label for="name">Imię lub nick&nbsp;</label>
+            <input type="text" name="name" id="name" size="12" minlength="3" maxlength="20" required="required" autofocus="autofocus" placeholder="np.: Maciej"><br><br>
+
+            <label for="password">Hasło&nbsp;</label>
+            <input type="password" name="password" id="password" minlength="8" required="required" placeholder="np.: B3zp13czn3-H@sło!"><br>
+
+            <label for="password_rep">Powtórz hasło&nbsp;</label>
+            <input type="password" name="password_rep" id="password_rep" minlength="8" required="required"><br><br>
+
+            <label for="phone">Numer telefonu&nbsp;</label>
+            <input type="tel" name="phone" id="phone" required="required" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" title="Podaj 9-cio cyfrowy numer telefonu w formacie 123-123-123" placeholder="123-456-789"><br>
+
+            <label for="birthdate">Data Urodzenia&nbsp;</label>
+            <input type="date" name="birthdate" id="birthdate" min="1918-11-11"><br>
+
+            <label for="sex">Płeć&nbsp;</label>
+            <input type="radio" name="sex" id="sex" value="male">mężczyzna
+            <input type="radio" name="sex" id="sex" value="female" checked="checked">kobieta
+            <input type="radio" name="sex" id="sex" value="non-binary">niebinarna<br>
+
+            <label for="avatar">Twój awatar</label>
+            <input type="file" name="avatar" id="avatar" accept="image/*">
+        </fieldset>
+        <fieldset>
+            <legend>Zainteresowania i umiejętności:</legend>
+            <label for="sport">Sport</label>
+            <input type="checkbox" name="sport" id="sport" value="football">piłka nożna
+            <input type="checkbox" name="sport" id="sport" value="handball">szczypiorniak
+            <input type="checkbox" name="sport" id="sport" value="speedway">żużel<br>
+
+            <label for="itskills">Umiejętności IT</label><br>
+            <select name="itskills" id="itskills" size="5" multiple="multiple">
+                <optgroup label="Systemy operacyjne">
+                    <option value="windows" selected="selected">Windows</option>
+                    <option value="linux" selected="selected">Linuks</option>
+                    <option value="macos">MacOS</option>
+                </optgroup>
+                <optgroup label="Oprogramowanie biurowe">
+                    <option value="word">Word</option>
+                    <option value="excel">Excel</option>
+                    <option value="powerpoint">PowerPoint</option>
+                </optgroup>
+            </select><br>
+
+            <label for="color">Ulubiony kolor&nbsp;</label>
+            <input type="color" name="color" id="color"><br>
+
+            <label for="mondays">Jak bardzo nie lubisz poniedziałków&nbsp;</label>
+            <input type="range" name="mondays" id="mondays" min="0" max="10" step="1"><br>
+
+            <label for="other">Kilka słów o pozostałych zainteresowaniach</label><br>
+            <textarea name="other" id="other" cols="50" rows="4"></textarea>
+        </fieldset>
+        <br>
+        <input type="submit" value="Zapisz">
+        <input type="reset" value="Wypełnij ponownie">
+    </form>
+
+</body>
+</html>
