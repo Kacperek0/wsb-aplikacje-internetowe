@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- powyżej określenie typu dokumentu jako HTML 4.01 Strict -->
+<html> <!-- początek dokumentu html -->
+<head> <!-- początek sekcji nagłówka -->
+		<!-- poniżej określenie kodowania znaków na utf8 -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!-- Poniżej ustawienie tytułu strony: wyświetlane w górnym pasku przegądarki -->
+		<title>Zainteresowania</title>
+        <!-- Ustawienie słów kluczowych, może być wykorzystywane przez katalogi stron czy wyszukiwarki internetowe -->
+    <meta name="keywords" content="owoce, warzywa, pomidory, gruszki, kapusta, sałata, seler, por, jabłka, wiśnie, czereśnie, truskawki">
+    	<!-- opis strony - może być wykorzystywane przez katalogi stron czy wyszukiwarki internetowe -->
+    <meta name="description" content="Strona zawiera mnóstwo informacji na temat owoców i warzyw popularnych w Polsce.">
+    <meta name="author" content="Jan Kowalski - jan@kowalski.pl">     	<!-- autor strony -->
+</head> <!-- koniec sekcji nagłówka -->
+<body>	  <!-- początek treści strony -->
+	<!-- początek definicji formularza. Po kliknięciu wyślij dane zostaną przesłane do pliku 035.php metodą post. Ponieważ formularz będzie przesyłał także plik kodowanie danych przy przesyłaniu jest ustawione na multipart/form-data -->
+	<form action="095.php" method="post" enctype="multipart/form-data" name="form1">
+            <h1>Zaznacz swoje ulubione gatunki muzyczne:</h1>
+            <p>
+
+            <input type="checkbox" name="gatunek[]" id="acid_jazz" value="acid jazz" >acid jazz<br>
+            <input type="checkbox" name="gatunek[]" id="acid_rock" value="acid rock" checked="checked">acid rock<br>
+            <input type="checkbox" name="gatunek[]" id="art_rock" value="art rock" checked="checked">art rock<br>
+            <input type="checkbox" name="gatunek[]" id="avant-garde_jazz" value="avant-garde jazz" >avant-garde jazz<br>
+            <input type="checkbox" name="gatunek[]" id="art_punk" value="art punk" >art punk<br>
+            <input type="checkbox" name="gatunek[]" id="blues" value="blues" checked="checked">blues<br>
+            <input type="checkbox" name="gatunek[]" id="bluesgrass" value="bluesgrass" >bluesgrass<br>
+            <input type="checkbox" name="gatunek[]" id="black_metal" value="black metal" checked="checked">black metal<br>
+            <input type="checkbox" name="gatunek[]" id="country" value="country" >country<br>
+            <input type="checkbox" name="gatunek[]" id="crossover" value="crossover" checked="checked">crossover<br>
+            <input type="checkbox" name="gatunek[]" id="dancehall" value="dancehall" >dancehall<br>
+            <input type="checkbox" name="gatunek[]" id="deathcore" value="deathcore" checked="checked">deathcore<br>
+            <input type="checkbox" name="gatunek[]" id="death_metal" value="death metal" checked="checked">death metal<br>
+            <input type="checkbox" name="gatunek[]" id="drum_and_bass" value="drum and bass" >drum and bass<br>
+            <input type="checkbox" name="gatunek[]" id="dubstep" value="dubstep" >dubstep<br>
+            <input type="checkbox" name="gatunek[]" id="electro" value="electro" >electro<br>
+            <input type="checkbox" name="gatunek[]" id="gothic_metal" value="gothic metal" >gothic metal<br>
+            <input type="checkbox" name="gatunek[]" id="grunge" value="grunge" checked="checked">grunge<br>
+            <input type="checkbox" name="gatunek[]" id="hard_rock" value="hard rock" checked="checked">hard rock<br>
+            <input type="checkbox" name="gatunek[]" id="hardcore" value="hardcore" checked="checked">hardcore<br>
+            <input type="checkbox" name="gatunek[]" id="heavy_metal" value="heavy metal" >heavy metal<br>
+            <input type="checkbox" name="gatunek[]" id="hip-hop" value="hip-hop" >hip-hop<br>
+            <input type="checkbox" name="gatunek[]" id="indie_pop" value="indie pop" >indie pop<br>
+            <input type="checkbox" name="gatunek[]" id="indie_rock" value="indie rock" >indie rock<br>
+            <input type="checkbox" name="gatunek[]" id="industrial_metal" value="industrial metal" >industrial metal<br>
+            <input type="checkbox" name="gatunek[]" id="instrumental_rock" value="instrumental rock" checked="checked">instrumental rock<br>
+            <input type="checkbox" name="gatunek[]" id="j-rock" value="j-rock" >j-rock<br>
+            <input type="checkbox" name="gatunek[]" id="jazz" value="jazz" >jazz<br>
+            <input type="checkbox" name="gatunek[]" id="klezmer" value="klezmer" >klezmer<br>
+            <input type="checkbox" name="gatunek[]" id="latin" value="latin" >latin<br>
+
+            <input type="checkbox" name="gatunek[]" id="metal_alternatywny" value="metal alternatywny" >metal alternatywny<br>
+            <input type="checkbox" name="gatunek[]" id="metal_progresywny" value="metal progresywny" >metal progresywny<br>
+            <input type="checkbox" name="gatunek[]" id="metal_neoklasyczny" value="metal neoklasyczny" checked="checked">metal neoklasyczny<br>
+            <input type="checkbox" name="gatunek[]" id="metal_symfoniczny" value="metal symfoniczny" >metal symfoniczny<br>
+            <input type="checkbox" name="gatunek[]" id="noise" value="noise" checked="checked">noise<br>
+            <input type="checkbox" name="gatunek[]" id="Nu_metal" value="Nu metal" >nu metal<br>
+            <input type="checkbox" name="gatunek[]" id="Oi" value="Oi!" checked="checked">Oi!<br>
+            <input type="checkbox" name="gatunek[]" id="Poezja_spiewana" value="Poezja śpiewana" >poezja śpiewana<br>
+            <input type="checkbox" name="gatunek[]" id="Pop" value="Pop" >pop<br>
+
+            <input type="checkbox" name="gatunek[]" id="Post_hardcore" value="Post hardcore" >post hardcore<br>
+            <input type="checkbox" name="gatunek[]" id="Post_punk" value="Post punk" >post punk<br>
+            <input type="checkbox" name="gatunek[]" id="Post_rock" value="Post-rock" checked="checked">post-rock<br>
+            <input type="checkbox" name="gatunek[]" id="Post_metal" value="Post metal" checked="checked">post metal<br>
+            <input type="checkbox" name="gatunek[]" id="power_metal" value="power metal" >power metal<br>
+            <input type="checkbox" name="gatunek[]" id="Punk" value="Punk" checked="checked">punk<br>
+            <input type="checkbox" name="gatunek[]" id="Rap" value="Rap" >rap<br>
+            <input type="checkbox" name="gatunek[]" id="Reggae" value="Reggae" >reggae<br>
+            <input type="checkbox" name="gatunek[]" id="Rock" value="Rock" >rock<br>
+            <input type="checkbox" name="gatunek[]" id="Rock_alternatywny" value="Rock alternatywny" checked="checked">rock alternatywny<br>
+            <input type="checkbox" name="gatunek[]" id="Rock_gotycki" value="Rock gotycki" checked="checked">rock gotycki<br>
+            <input type="checkbox" name="gatunek[]" id="Rock_and_roll" value="Rock and roll" >rock and roll<br>
+            <input type="checkbox" name="gatunek[]" id="Salsa" value="Salsa" >salsa<br>
+            <input type="checkbox" name="gatunek[]" id="Samba" value="Samba" >samba<br>
+            <input type="checkbox" name="gatunek[]" id="Shoegaze" value="Shoegaze" checked="checked">shoegaze<br>
+            <input type="checkbox" name="gatunek[]" id="Ska" value="Ska" >ska<br>
+            <input type="checkbox" name="gatunek[]" id="Skate_punk" value="Skate punk" >skate punk<br>
+            <input type="checkbox" name="gatunek[]" id="Sludge_metal" value="Sludge metal" checked="checked">sludge metal<br>
+            <input type="checkbox" name="gatunek[]" id="Smooth_jazz" value="Smooth jazz" >smooth jazz<br>
+            <input type="checkbox" name="gatunek[]" id="Southern_metal" value="Southern metal" >southern metal<br>
+            <input type="checkbox" name="gatunek[]" id="Southern_rock" value="Southern rock" checked="checked">southern rock<br>
+            <input type="checkbox" name="gatunek[]" id="Space_rock" value="Space rock" checked="checked">space rock<br>
+            <input type="checkbox" name="gatunek[]" id="Speed_metal" value="Speed metal" >speed metal<br>
+            <input type="checkbox" name="gatunek[]" id="Stoner_rock" value="Stoner rock" checked="checked">stoner rock<br>
+            <input type="checkbox" name="gatunek[]" id="Symfoniczny_black_metal" value="Symfoniczny black metal" >symfoniczny black metal<br>
+            <input type="checkbox" name="gatunek[]" id="Yass" value="Yass" >yass<br>
+            <br> <!-- wymuszenie przejścia do następnej linii -->
+
+
+		<!-- przycisk pozwalający na zresetowanie wartości pól do ustawień domyślnych -->
+    	<input type="reset" name="reset" id="reset" value="Zresetuj">
+		<!-- przycisk pozwalający na przesłanie danych z formularza do skryptu przetwarzającego  -->
+    	<input type="submit" name="wyslij" id="wyslij" value="Wyślij">
+    </p>
+	</form>
+</body>
+</html>
